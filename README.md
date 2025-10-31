@@ -138,13 +138,13 @@ This division makes it easier to follow the process sequentially and understand 
 
              http://my-portfolio-bucket-demo.s3-website-us-east-1.amazonaws.com
 
-🖼️ 12. Website URL Displayed (https://github.com/DEEPIKAKANNAN25/AWS_Project/blob/main/images/12-website-url.png)
+🖼️ 12. Website URL Displayed ([images/12-website-url.png](images/12-website-url.png))
 
               Description:This shows the generated website endpoint.
 
               Action:Copy this URL to test your hosted site in a browser.
 
-🖼️ 13. Custom Error Page ()https://github.com/DEEPIKAKANNAN25/AWS_Project/blob/main/images/13-error-page.png
+🖼️ 13. Custom Error Page ([images/13-error-page.png](images/13-error-page.png))
 
               Description:Displays your custom error page when a non-existent page is requested.
 
@@ -152,29 +152,29 @@ This division makes it easier to follow the process sequentially and understand 
 
 ☁️ Part 4 – File Upload and Management (Screenshots 14–18)
 
-🖼️ 14. Upload Page Interface (https://github.com/DEEPIKAKANNAN25/AWS_Project/blob/main/images/14-upload-page.png)
+🖼️ 14. Upload Page Interface ([images/14-upload-page.png](images/14-upload-page.png))
 
                Description:Click Upload to start adding your website files (HTML, CSS, JS, images) into the bucket.
 
-🖼️ 15. File Upload Interface (https://github.com/DEEPIKAKANNAN25/AWS_Project/blob/main/images/15-file-upload-page.png)
+🖼️ 15. File Upload Interface ([images/15-file-upload-page.png](images/15-file-upload-page.png))
 
              Description:Shows the file selection dialog where you choose your local files to upload.
 
              Best Practice:Maintain the same folder structure as your website project.
 
-🖼️ 16. List of Uploaded Files (https://github.com/DEEPIKAKANNAN25/AWS_Project/blob/main/images/16-uploaded-files-list.png)
+🖼️ 16. List of Uploaded Files ([images/16-uploaded-files-list.png](images/16-uploaded-files-list.png))
 
             Description:Displays all files uploaded to your S3 bucket.
 
             Verification:Ensure index.html and error.html exist at the root level.
 
-🖼️ 17. Files Uploading in Progress (https://github.com/DEEPIKAKANNAN25/AWS_Project/blob/main/images/17-files-uploading.png)
+🖼️ 17. Files Uploading in Progress ([images/17-files-uploading.png](images/17-files-uploading.png))
 
              Description:Indicates that the upload process is ongoing.
 
              Tip:Large files might take longer depending on your internet speed.
 
-🖼️ 18. Upload Success Confirmation (https://github.com/DEEPIKAKANNAN25/AWS_Project/blob/main/images/18-upload-success-message.png)
+🖼️ 18. Upload Success Confirmation ([images/18-upload-success-message.png](images/18-upload-success-message.png))
 
              Description:Confirms all website files were uploaded successfully.
 
@@ -182,15 +182,15 @@ This division makes it easier to follow the process sequentially and understand 
 
 🧭 Part 5 – Website Preview Pages (Screenshots 19–21)
 
-🖼️ 19. About Page (https://github.com/DEEPIKAKANNAN25/AWS_Project/blob/main/images/19-static-webiste-about.png)
+🖼️ 19. About Page ([images/19-static-webiste-about.png](images/19-static-webiste-about.png))
 
              Description:Displays the “About, Education and Experience” section of the hosted static website captured during page scrolling.
 
-🖼️ 20. Projects Page (https://github.com/DEEPIKAKANNAN25/AWS_Project/blob/main/images/20-static-website-projects.png)
+🖼️ 20. Projects Page ([images/20-static-website-projects.png](images/20-static-website-projects.png))
 
                Description:Shows the “Projects” section of the website while scrolling through the hosted static site.
 
-🖼️ 21. Certificates Page (https://github.com/DEEPIKAKANNAN25/AWS_Project/blob/main/images/21-static-website-certificates.png)
+🖼️ 21. Certificates Page ([images/21-static-website-certificates.png](images/21-static-website-certificates.png))
 
                Description:Shows the “Technical skills, Soft skills and Certificates” section of the website while scrolling through the hosted static site.
 
