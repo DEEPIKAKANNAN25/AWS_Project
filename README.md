@@ -35,11 +35,11 @@ Reliable, scalable hosting without needing a web server
 Step-by-step AWS implementation for beginners
 
 🛠️ Services Used
-AWS Service	Purpose
-Amazon S3	Hosting the static website files
-AWS Management Console	Creating and configuring resources
-IAM	Managing user permissions (if required)
+
+![Uploading image.png…]()
+
 🧩 Step-by-Step Implementation
+
 Step 1: Create an S3 Bucket
 
 Go to the AWS Management Console → S3.
