@@ -60,11 +60,9 @@ This division makes it easier to follow the process sequentially and understand 
 
 🖼️ 1. Bucket Name Setup (https://github.com/DEEPIKAKANNAN25/AWS_Project/blob/main/images/1-bucket-name.png)
 
-                 Description:
-This step shows the creation of a new S3 bucket. You must enter a globally unique bucket name (e.g., my-portfolio-bucket-demo).
+            Description:This step shows the creation of a new S3 bucket. You must enter a globally unique bucket name (e.g., my-portfolio-bucket-demo).
 
-Key Setting:
-Choose the AWS Region close to your target audience to minimize latency.
+             Key Setting:Choose the AWS Region close to your target audience to minimize latency.
 
 🖼️ 2. Object Ownership Configuration (https://github.com/DEEPIKAKANNAN25/AWS_Project/blob/main/images/2-object-ownership.png)
 
