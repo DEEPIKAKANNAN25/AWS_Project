@@ -108,13 +108,13 @@ This division makes it easier to follow the process sequentially and understand 
 
           Description:In the Permissions tab, add a Bucket Policy that grants public read access to objects.
 
-          Example Policy:
+          Purpose:This allows anyone on the internet to access the files hosted in your S3 bucket.
+
+          
 
 <img width="891" height="347" alt="image" src="https://github.com/user-attachments/assets/4a90227e-b5d7-431d-acd0-e97ed40b8ed3" />
 
 
-
-         Purpose:This allows anyone on the internet to access the files hosted in your S3 bucket.
 
 🖼️ 9. Policy Applied Successfully (https://github.com/DEEPIKAKANNAN25/AWS_Project/blob/main/images/9-policy-success-message.png)
 
@@ -128,7 +128,7 @@ This division makes it easier to follow the process sequentially and understand 
 
            Description:Go to the Properties tab and scroll to Static website hosting.
 
-            Action:Enable hosting and specify your index document (e.g., index.html) and error document (e.g., error.html).
+           Action:Enable hosting and specify your index document (e.g., index.html) and error document (e.g., error.html).
 
 🖼️ 11. Hosting Success Message (https://github.com/DEEPIKAKANNAN25/AWS_Project/blob/main/images/11-hosting-success-message.png)
 
@@ -136,13 +136,13 @@ This division makes it easier to follow the process sequentially and understand 
 
             Outcome:AWS provides an endpoint URL for your hosted site, usually like:
 
-              http://my-portfolio-bucket-demo.s3-website-us-east-1.amazonaws.com
+             http://my-portfolio-bucket-demo.s3-website-us-east-1.amazonaws.com
 
 🖼️ 12. Website URL Displayed (https://github.com/DEEPIKAKANNAN25/AWS_Project/blob/main/images/12-website-url.png)
 
               Description:This shows the generated website endpoint.
 
-               Action:Copy this URL to test your hosted site in a browser.
+              Action:Copy this URL to test your hosted site in a browser.
 
 🖼️ 13. Custom Error Page ()https://github.com/DEEPIKAKANNAN25/AWS_Project/blob/main/images/13-error-page.png
 
@@ -154,13 +154,13 @@ This division makes it easier to follow the process sequentially and understand 
 
 🖼️ 14. Upload Page Interface (https://github.com/DEEPIKAKANNAN25/AWS_Project/blob/main/images/14-upload-page.png)
 
-Description:Click Upload to start adding your website files (HTML, CSS, JS, images) into the bucket.
+               Description:Click Upload to start adding your website files (HTML, CSS, JS, images) into the bucket.
 
 🖼️ 15. File Upload Interface (https://github.com/DEEPIKAKANNAN25/AWS_Project/blob/main/images/15-file-upload-page.png)
 
-Description:Shows the file selection dialog where you choose your local files to upload.
+             Description:Shows the file selection dialog where you choose your local files to upload.
 
-Best Practice:Maintain the same folder structure as your website project.
+             Best Practice:Maintain the same folder structure as your website project.
 
 🖼️ 16. List of Uploaded Files (https://github.com/DEEPIKAKANNAN25/AWS_Project/blob/main/images/16-uploaded-files-list.png)
 
@@ -178,21 +178,21 @@ Best Practice:Maintain the same folder structure as your website project.
 
              Description:Confirms all website files were uploaded successfully.
 
-              Next Step:Visit your static website endpoint to view your hosted site.
+             Next Step:Visit your static website endpoint to view your hosted site.
 
 🧭 Part 5 – Website Preview Pages (Screenshots 19–21)
 
 🖼️ 19. About Page (https://github.com/DEEPIKAKANNAN25/AWS_Project/blob/main/images/19-static-webiste-about.png)
 
-              Description:Displays the “About” section of your website hosted via S3.
+             Description:Displays the “About, Education and Experience” section of the hosted static website captured during page scrolling.
 
 🖼️ 20. Projects Page (https://github.com/DEEPIKAKANNAN25/AWS_Project/blob/main/images/20-static-website-projects.png)
 
-               Description:Showcases your projects page to demonstrate dynamic navigation working correctly.
+               Description:Shows the “Projects” section of the website while scrolling through the hosted static site.
 
 🖼️ 21. Certificates Page (https://github.com/DEEPIKAKANNAN25/AWS_Project/blob/main/images/21-static-website-certificates.png)
 
-               Description:Displays certification details, proving multi-page site navigation is functional.
+               Description:Shows the “Technical skills, Soft skills and Certificates” section of the website while scrolling through the hosted static site.
 
 🎥 Demo Video
 
