@@ -66,176 +66,133 @@ This division makes it easier to follow the process sequentially and understand 
 
 🖼️ 2. Object Ownership Configuration (https://github.com/DEEPIKAKANNAN25/AWS_Project/blob/main/images/2-object-ownership.png)
 
-Description:
-Configure who owns and manages uploaded objects in the bucket.
+             Description:Configure who owns and manages uploaded objects in the bucket.
 
-Best Practice:
-Select Bucket owner enforced to ensure the bucket owner controls all objects (helps with access consistency).
+             Best Practice:Select Bucket owner enforced to ensure the bucket owner controls all objects (helps with access consistency).
 
-🖼️ 3. Block Public Access Settings (3-block-public-access.png)
+🖼️ 3. Block Public Access Settings (https://github.com/DEEPIKAKANNAN25/AWS_Project/blob/main/images/3-block-public-access.png)
 
-Description:
-AWS blocks public access by default for security.
+             Description:AWS blocks public access by default for security.
 
-Action:
-Uncheck Block all public access if your goal is to host a public website.
+             Action:Uncheck Block all public access if your goal is to host a public website.
 
-Warning:
-Only disable this if you understand the implications — this bucket will be readable by the public.
+             Warning:Only disable this if you understand the implications — this bucket will be readable by the public.
 
-🖼️ 4. Versioning Configuration (4-versioning-settings.png)
+🖼️ 4. Versioning Configuration (https://github.com/DEEPIKAKANNAN25/AWS_Project/blob/main/images/4-versioning-settings.png)
 
-Description:
-Versioning helps you keep multiple versions of an object (useful for rollback).
+             Description:Versioning helps you keep multiple versions of an object (useful for rollback).
 
-Optional:
-Enable versioning for production environments; it’s not mandatory for static websites.
+             Optional:Enable versioning for production environments; it’s not mandatory for static websites.
 
-🖼️ 5. Encryption Type Selection (5-encryption-type.png)
+🖼️ 5. Encryption Type Selection (https://github.com/DEEPIKAKANNAN25/AWS_Project/blob/main/images/5-encryption-type.png)
 
-Description:
-You can choose to encrypt your data at rest using Amazon S3-managed keys (SSE-S3) or AWS KMS keys (SSE-KMS).
+              Description:You can choose to encrypt your data at rest using Amazon S3-managed keys (SSE-S3) or AWS KMS keys (SSE-KMS).
 
-Best Practice:
-Use SSE-S3 for simplicity unless compliance requires KMS.
+               Best Practice:Use SSE-S3 for simplicity unless compliance requires KMS.
 
-🖼️ 6. Create Bucket Confirmation (6-create-bucket.png)
+🖼️ 6. Create Bucket Confirmation (https://github.com/DEEPIKAKANNAN25/AWS_Project/blob/main/images/6-create-bucket.png)
 
-Description:
-This screenshot confirms clicking the Create bucket button at the bottom of the page.
+             Description:This screenshot confirms clicking the Create bucket button at the bottom of the page.
 
-Outcome:
-A new bucket is successfully created with the specified configuration.
+             Outcome:A new bucket is successfully created with the specified configuration.
 
-🖼️ 7. Bucket Created Successfully (7-bucket-created.png)
+🖼️ 7. Bucket Created Successfully (https://github.com/DEEPIKAKANNAN25/AWS_Project/blob/main/images/7-object-created-success-message.png)
 
-Description:
-AWS confirms that your bucket has been created.
+             Description:AWS confirms that your bucket has been created.
 
-Next Step:
-Click the bucket name to open it and configure it for website hosting.
+             Next Step:Click the bucket name to open it and configure it for website hosting.
 
 🔐 Part 2 – Bucket Policy Configuration (Screenshots 8–9)
-🖼️ 8. Add Policy JSON Document (8-policy-json.png)
 
-Description:
-In the Permissions tab, add a Bucket Policy that grants public read access to objects.
+🖼️ 8. Add Policy JSON Document (https://github.com/DEEPIKAKANNAN25/AWS_Project/blob/main/images/8-policy-json-document.png)
 
-Example Policy:
+          Description:In the Permissions tab, add a Bucket Policy that grants public read access to objects.
 
-{
-  "Version": "2012-10-17",
-  "Statement": [
-    {
-      "Sid": "PublicReadGetObject",
-      "Effect": "Allow",
-      "Principal": "*",
-      "Action": "s3:GetObject",
-      "Resource": "arn:aws:s3:::my-portfolio-bucket-demo/*"
-    }
-  ]
-}
+          Example Policy:
+
+<img width="891" height="347" alt="image" src="https://github.com/user-attachments/assets/4a90227e-b5d7-431d-acd0-e97ed40b8ed3" />
 
 
-Purpose:
-This allows anyone on the internet to access the files hosted in your S3 bucket.
 
-🖼️ 9. Policy Applied Successfully (9-policy-success.png)
+         Purpose:This allows anyone on the internet to access the files hosted in your S3 bucket.
 
-Description:
-This screenshot confirms that the JSON policy was accepted and applied.
+🖼️ 9. Policy Applied Successfully (https://github.com/DEEPIKAKANNAN25/AWS_Project/blob/main/images/9-policy-success-message.png)
 
-Verification:
-The bucket should now allow public access to its objects (useful for hosting a static website).
+         Description:This screenshot confirms that the JSON policy was accepted and applied.
+
+         Verification:The bucket should now allow public access to its objects (useful for hosting a static website).
 
 🌐 Part 3 – Static Website Hosting Setup (Screenshots 10–13)
-🖼️ 10. Enable Static Website Hosting (10-static-website-hosting.png)
 
-Description:
-Go to the Properties tab and scroll to Static website hosting.
+🖼️ 10. Enable Static Website Hosting (https://github.com/DEEPIKAKANNAN25/AWS_Project/blob/main/images/10-static-website-hosting.png)
 
-Action:
-Enable hosting and specify your index document (e.g., index.html) and error document (e.g., error.html).
+           Description:Go to the Properties tab and scroll to Static website hosting.
 
-🖼️ 11. Hosting Success Message (11-hosting-success.png)
+            Action:Enable hosting and specify your index document (e.g., index.html) and error document (e.g., error.html).
 
-Description:
-Confirms that static hosting has been enabled successfully.
+🖼️ 11. Hosting Success Message (https://github.com/DEEPIKAKANNAN25/AWS_Project/blob/main/images/11-hosting-success-message.png)
 
-Outcome:
-AWS provides an endpoint URL for your hosted site, usually like:
+            Description:Confirms that static hosting has been enabled successfully.
 
-http://my-portfolio-bucket-demo.s3-website-us-east-1.amazonaws.com
+            Outcome:AWS provides an endpoint URL for your hosted site, usually like:
 
-🖼️ 12. Website URL Displayed (12-website-url.png)
+              http://my-portfolio-bucket-demo.s3-website-us-east-1.amazonaws.com
 
-Description:
-This shows the generated website endpoint.
+🖼️ 12. Website URL Displayed (https://github.com/DEEPIKAKANNAN25/AWS_Project/blob/main/images/12-website-url.png)
 
-Action:
-Copy this URL to test your hosted site in a browser.
+              Description:This shows the generated website endpoint.
 
-🖼️ 13. Custom Error Page (13-error-page.png)
+               Action:Copy this URL to test your hosted site in a browser.
 
-Description:
-Displays your custom error page when a non-existent page is requested.
+🖼️ 13. Custom Error Page ()https://github.com/DEEPIKAKANNAN25/AWS_Project/blob/main/images/13-error-page.png
 
-Purpose:
-Provides a professional user experience even for invalid URLs.
+              Description:Displays your custom error page when a non-existent page is requested.
+
+              Purpose:Provides a professional user experience even for invalid URLs.
 
 ☁️ Part 4 – File Upload and Management (Screenshots 14–18)
-🖼️ 14. Upload Page Interface (14-upload-page.png)
 
-Description:
-Click Upload to start adding your website files (HTML, CSS, JS, images) into the bucket.
+🖼️ 14. Upload Page Interface (https://github.com/DEEPIKAKANNAN25/AWS_Project/blob/main/images/14-upload-page.png)
 
-🖼️ 15. File Upload Interface (15-upload-interface.png)
+Description:Click Upload to start adding your website files (HTML, CSS, JS, images) into the bucket.
 
-Description:
-Shows the file selection dialog where you choose your local files to upload.
+🖼️ 15. File Upload Interface (https://github.com/DEEPIKAKANNAN25/AWS_Project/blob/main/images/15-file-upload-page.png)
 
-Best Practice:
-Maintain the same folder structure as your website project.
+Description:Shows the file selection dialog where you choose your local files to upload.
 
-🖼️ 16. List of Uploaded Files (16-files-list.png)
+Best Practice:Maintain the same folder structure as your website project.
 
-Description:
-Displays all files uploaded to your S3 bucket.
+🖼️ 16. List of Uploaded Files (https://github.com/DEEPIKAKANNAN25/AWS_Project/blob/main/images/16-uploaded-files-list.png)
 
-Verification:
-Ensure index.html and error.html exist at the root level.
+            Description:Displays all files uploaded to your S3 bucket.
 
-🖼️ 17. Files Uploading in Progress (17-uploading-progress.png)
+            Verification:Ensure index.html and error.html exist at the root level.
 
-Description:
-Indicates that the upload process is ongoing.
+🖼️ 17. Files Uploading in Progress (https://github.com/DEEPIKAKANNAN25/AWS_Project/blob/main/images/17-files-uploading.png)
 
-Tip:
-Large files might take longer depending on your internet speed.
+             Description:Indicates that the upload process is ongoing.
 
-🖼️ 18. Upload Success Confirmation (18-upload-success.png)
+             Tip:Large files might take longer depending on your internet speed.
 
-Description:
-Confirms all website files were uploaded successfully.
+🖼️ 18. Upload Success Confirmation (https://github.com/DEEPIKAKANNAN25/AWS_Project/blob/main/images/18-upload-success-message.png)
 
-Next Step:
-Visit your static website endpoint to view your hosted site.
+             Description:Confirms all website files were uploaded successfully.
 
-🧭 Part 5 – Website Preview Pages (Screenshots 19–22)
-🖼️ 19. About Page (19-about-page.png)
+              Next Step:Visit your static website endpoint to view your hosted site.
 
-Description:
-Displays the “About” section of your website hosted via S3.
+🧭 Part 5 – Website Preview Pages (Screenshots 19–21)
 
-🖼️ 20. Projects Page (20-projects-page.png)
+🖼️ 19. About Page (https://github.com/DEEPIKAKANNAN25/AWS_Project/blob/main/images/19-static-webiste-about.png)
 
-Description:
-Showcases your projects page to demonstrate dynamic navigation working correctly.
+              Description:Displays the “About” section of your website hosted via S3.
 
-🖼️ 21. Certificates Page (21-certificates-page.png)
+🖼️ 20. Projects Page (https://github.com/DEEPIKAKANNAN25/AWS_Project/blob/main/images/20-static-website-projects.png)
 
-Description:
-Displays certification details, proving multi-page site navigation is functional.
+               Description:Showcases your projects page to demonstrate dynamic navigation working correctly.
+
+🖼️ 21. Certificates Page (https://github.com/DEEPIKAKANNAN25/AWS_Project/blob/main/images/21-static-website-certificates.png)
+
+               Description:Displays certification details, proving multi-page site navigation is functional.
 
 🎥 Demo Video
 
