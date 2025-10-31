@@ -84,18 +84,8 @@ Step 5: Set Bucket Policy for Public Access
 
 Go to Permissions → Bucket Policy and add the following:
 
-{
-  "Version": "2012-10-17",
-  "Statement": [
-    {
-      "Sid": "PublicReadGetObject",
-      "Effect": "Allow",
-      "Principal": "*",
-      "Action": "s3:GetObject",
-      "Resource": "arn:aws:s3:::your-bucket-name/*"
-    }
-  ]
-}
+<img width="783" height="445" alt="image" src="https://github.com/user-attachments/assets/438435b5-67f9-40f2-bf98-dded1dc62dd5" />
+
 
 
 Replace your-bucket-name with your actual S3 bucket name.
