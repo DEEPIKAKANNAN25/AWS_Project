@@ -64,7 +64,7 @@ This division makes it easier to follow the process sequentially and understand 
 
              Key Setting:Choose the AWS Region close to your target audience to minimize latency.
 
-🖼️ 2. Object Ownership Configuration (https://github.com/DEEPIKAKANNAN25/AWS_Project/blob/main/images/2-object-ownership.png)
+🖼️ 2. Object Ownership Configuration ([images/2-object-ownership.png](images/2-object-ownership.png))
 
              Description:Configure who owns and manages uploaded objects in the bucket.
 
