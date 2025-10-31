@@ -57,9 +57,10 @@ This division makes it easier to follow the process sequentially and understand 
 
 
 🪣 Part 1 – S3 Bucket Creation (Screenshots 1–7)
+
 🖼️ 1. Bucket Name Setup (https://github.com/DEEPIKAKANNAN25/AWS_Project/blob/main/images/1-bucket-name.png)
 
-Description:
+                 Description:
 This step shows the creation of a new S3 bucket. You must enter a globally unique bucket name (e.g., my-portfolio-bucket-demo).
 
 Key Setting:
