@@ -18,7 +18,7 @@ Cost-Effective: Pay only for what I use, with low storage and transfer costs.
 
 Seamless Integration: Works with AWS services like CloudFront, Lambda, and QuickSight.
 
-🔹Key Features of S3 for Static Website Hosting
+🔹 Key Features of S3 for Static Website Hosting
 
 Serverless: No need for servers or infrastructure management.
 
@@ -64,16 +64,16 @@ Part 4: File Upload and Management
 
 Part 5: Website Preview and Verification
 
-This division makes it easier to follow the process sequentially and understand each AWS S3 configuration..
+This division makes it easier to follow the process sequentially and understand each AWS S3 configuration.
 
 
 🪣 Part 1 – S3 Bucket Creation (Screenshots 1–7)
 
 🖼️ 1. Bucket Name Setup ([images/1-bucket-name.png](images/1-bucket-name.png))
 
-            I logged in to the AWS Management Console, navigated to S3, and clicked "Create bucket". I entered a unique bucket name (my-portfolio-bucket-demo) and selected a region 
+            I logged in to the AWS Management Console, navigated to S3, and clicked "Create bucket". I entered a unique bucket name (my-portfolio-bucket-demo) and selected a region.
 
-             Key Setting:Choose the AWS Region close to your target audience to minimize latency.
+             Key Setting: Choose the AWS Region close to your target audience to minimize latency.
 
 🖼️ 2. Object Ownership Configuration ([images/2-object-ownership.png](images/2-object-ownership.png))
 
@@ -106,21 +106,17 @@ This division makes it easier to follow the process sequentially and understand 
 
            I went to the "Permissions" tab in the bucket dashboard. I added a policy to grant public read access to objects. This allows the website to be viewed publicly.
 
-          
-
 <img width="891" height="347" alt="image" src="https://github.com/user-attachments/assets/4a90227e-b5d7-431d-acd0-e97ed40b8ed3" />
-
-
 
 🖼️ 9. Policy Applied Successfully ([images/9-policy-success-message.png](images/9-policy-success-message.png))
 
-         The policy is applied to the object successfully.
+         The policy was applied to the object successfully.
 
 🌐 Part 3 – Static Website Hosting Setup (Screenshots 10–13)
 
 🖼️ 10. Enable Static Website Hosting ([images/10-static-website-hosting.png](images/10-static-website-hosting.png))
 
-           I navigated to the "Properties" tab.I enabled static website hosting, set the index document (e.g., "index.html"), and noted the endpoint "URL ()" S3 static websites use HTTP by default. For production, consider integrating CloudFront for HTTPS and custom domains.
+           I navigated to the "Properties" tab. I enabled static website hosting, set the index document (e.g., "index.html"), and noted the endpoint URL (e.g., http://my-bucket.s3-website-us-east-1.amazonaws.com). S3 static websites use HTTP by default. For production, consider integrating CloudFront for HTTPS and custom domains.
 
 🖼️ 11. Hosting Success Message ([images/11-hosting-success-message.png](images/11-hosting-success-message.png))
 
@@ -128,17 +124,17 @@ This division makes it easier to follow the process sequentially and understand 
 
 🖼️ 12. Website URL Displayed ([images/12-website-url.png](images/12-website-url.png))
 
-              This shows the generated website endpoint.Copy this URL to test your hosted site in a browser.
+              This shows the generated website endpoint. Copy this URL to test your hosted site in a browser.
 
 🖼️ 13. Custom Error Page ([images/13-error-page.png](images/13-error-page.png))
 
-              Displays your custom error page when a non-existent page is requested.Provides a professional user experience even for invalid URLs.
+              Displays your custom error page when a non-existent page is requested. Provides a professional user experience even for invalid URLs.
 
 ☁️ Part 4 – File Upload and Management (Screenshots 14–18)
 
 🖼️ 14. Upload Page Interface ([images/14-upload-page.png](images/14-upload-page.png))
 
-               I went to the "Objects" tab" for uploading.
+               I went to the "Objects" tab for uploading.
 
 🖼️ 15. File Upload Interface ([images/15-file-upload-page.png](images/15-file-upload-page.png))
 
@@ -155,11 +151,11 @@ This division makes it easier to follow the process sequentially and understand 
 
 🖼️ 18. Upload Success Confirmation ([images/18-upload-success-message.png](images/18-upload-success-message.png))
 
-             This confirmed all website files were uploaded successfully.I visited my static website endpoint to view my hosted static site.
+             This confirmed all website files were uploaded successfully. I visited my hosted static website endpoint to view my hosted static website.
 
 🧭 Part 5 – Website Preview Pages (Screenshots 19–21)
 
-🖼️ 19. About Page ([images/19-static-webiste-about.png](images/19-static-webiste-about.png))
+🖼️ 19. About Page ([images/19-static-website-about.png](images/19-static-website-about.png))
 
              Screenshot of  “About, Education and Experience” section of the hosted static website captured during page scrolling.
 
@@ -187,7 +183,7 @@ This division makes it easier to follow the process sequentially and understand 
 
 📚 Conclusion
 
- • By completing this project, I:
+ • By completing this project, I gained:" 
 
  • Gained hands-on experience deploying a static website on AWS S3
 
