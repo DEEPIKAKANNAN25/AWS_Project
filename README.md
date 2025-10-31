@@ -18,7 +18,7 @@ Cost-Effective: Pay only for what I use, with low storage and transfer costs.
 
 Seamless Integration: Works with AWS services like CloudFront, Lambda, and QuickSight.
 
-Key Features of S3 for Static Website Hosting
+🔹Key Features of S3 for Static Website Hosting
 
 Serverless: No need for servers or infrastructure management.
 
