@@ -1,6 +1,7 @@
 # AWS_Project
-Hosting a Static website using AWS S3
+
 🌐 AWS S3 Static Website Hosting – Personal Portfolio
+
 🧭 Overview
 
 This project demonstrates how to host a static personal portfolio website using Amazon S3.
