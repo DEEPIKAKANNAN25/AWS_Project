@@ -194,9 +194,7 @@ This division makes it easier to follow the process sequentially and understand 
 
                Description:Shows the “Technical skills, Soft skills and Certificates” section of the website while scrolling through the hosted static site.
 
-🎥 Demo Video
-
-Watch the full walkthrough here: https://github.com/DEEPIKAKANNAN25/AWS_Project/blob/main/Project-Demo/VideoRecording.mp4
+🎥 Demo Video: A full walkthrough of the deployed website in action: https://github.com/DEEPIKAKANNAN25/AWS_Project/blob/main/Project-Demo/VideoRecording.mp4
 
 🌟 Benefits of Hosting on Amazon S3
 
