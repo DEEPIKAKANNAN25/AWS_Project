@@ -11,25 +11,25 @@ Amazon S3 (Simple Storage Service) is a highly scalable and durable object stora
 
 🔹 Key Features of S3
 
-Unlimited data storage
+ • Unlimited data storage
 
-99.999999999% durability
+ • 99.999999999% durability
 
-Fine-grained access control
+• Fine-grained access control
 
-Pay-as-you-go pricing model
+ • Pay-as-you-go pricing model
 
 Seamless integration with AWS services like CloudFront, Lambda, and QuickSight
 
 🎯 Project Objective
 
-The goal was to deploy a static portfolio website using Amazon S3 with the following outcomes:
+ • The goal was to deploy a static portfolio website using Amazon S3 with the following outcomes:
 
-Enable public access for global visibility
+ • Enable public access for global visibility
 
-Achieve scalable and reliable hosting without managing servers
+ • Achieve scalable and reliable hosting without managing servers
 
-Provide a clear, step-by-step AWS implementation suitable for beginners
+ • Provide a clear, step-by-step AWS implementation suitable for beginners
 
 🛠️ AWS Services Used
 
@@ -41,60 +41,60 @@ IAM (for bucket policy)
 
 ✅ Step 1: Create an S3 Bucket
 
-Logged into AWS Management Console → S3
+ • Logged into AWS Management Console → S3
 
-Clicked “Create Bucket” and gave it a unique name
+ • Clicked “Create Bucket” and gave it a unique name
 
-Selected region: Asia Pacific (Mumbai)
+ • Selected region: Asia Pacific (Mumbai)
 
-Unchecked “Block all public access”
+ • Unchecked “Block all public access”
 
-Clicked “Create bucket”
+ • Clicked “Create bucket”
 
 ✅ Step 2: Verify the Created Bucket
 
-Confirmed the bucket was listed in the S3 dashboard
+ • Confirmed the bucket was listed in the S3 dashboard
 
 ✅ Step 3: Upload Website Files
 
-Navigated to the bucket → Objects tab → Clicked “Upload”
+ • Navigated to the bucket → Objects tab → Clicked “Upload”
 
-Uploaded index.html, style.css, and script.js
+ • Uploaded index.html, style.css, and script.js
 
-Clicked “Upload” to confirm
+ • Clicked “Upload” to confirm
 
 ✅ Step 4: Enable Static Website Hosting
 
-Went to Properties → Enabled “Static website hosting”
+ • Went to Properties → Enabled “Static website hosting”
 
-Set index document as index.html
+ • Set index document as index.html
 
-Saved changes to generate the website endpoint
+ • Saved changes to generate the website endpoint
 
 ✅ Step 5: Set Bucket Policy for Public Access
 
-Opened Permissions → Bucket Policy
+  • Opened Permissions → Bucket Policy
 
-Added a JSON policy to allow public read access
+ • Added a JSON policy to allow public read access
 
 <img width="988" height="404" alt="image" src="https://github.com/user-attachments/assets/e1d6d89e-d533-4524-8a20-917d208ce3e4" />
 
 
 ✅ Step 6: Disable Block Public Access
 
-In Permissions tab → Scrolled to “Block public access”
+ • In Permissions tab → Scrolled to “Block public access”
 
-Disabled “Block all public access”
+ • Disabled “Block all public access”
 
-Typed “confirm” and saved changes
+ • Typed “confirm” and saved changes
 
 ✅ Step 7: Verify and Access the Website
 
-Copied the website endpoint URL from the Static website hosting section
+ • Copied the website endpoint URL from the Static website hosting section
 
-Pasted it into the browser — the portfolio website was live 🎉
+ • Pasted it into the browser — the portfolio website was live 🎉
 
-Example URL: http://personal-portfolio-website-hosting.s3-website.ap-south-1.amazonaws.com
+ • Example URL: http://personal-portfolio-website-hosting.s3-website.ap-south-1.amazonaws.com
 
 📸 Implementation Screenshots
 
@@ -106,24 +106,24 @@ Watch the full walkthrough here: https://www.youtube.com/watch?v=VIDEO_ID (Repla
 
 🌟 Benefits of Hosting on Amazon S3
 
-Scalable: Handles high traffic automatically
+ • Scalable: Handles high traffic automatically
 
-Secure: IAM and bucket policies for access control
+ • Secure: IAM and bucket policies for access control
 
-Serverless: No infrastructure management needed
+ • Serverless: No infrastructure management needed
 
-Cost-effective: Pay only for what you use
+ • Cost-effective: Pay only for what you use
 
-Highly Available: 99.99% uptime with global reach
+ • Highly Available: 99.99% uptime with global reach
 
 📚 Conclusion
 
-By completing this project, I:
+ • By completing this project, I:
 
-Gained hands-on experience deploying a static website on AWS S3
+ • Gained hands-on experience deploying a static website on AWS S3
 
-Learned how to configure public access and bucket policies
+ • Learned how to configure public access and bucket policies
 
-Built a secure, scalable, and serverless portfolio site
+ • Built a secure, scalable, and serverless portfolio site
 
-This project is a great example of using AWS S3 for lightweight web hosting — perfect for portfolios, resumes, documentation, and more.
+ • This project is a great example of using AWS S3 for lightweight web hosting — perfect for portfolios, resumes, documentation, and more.
