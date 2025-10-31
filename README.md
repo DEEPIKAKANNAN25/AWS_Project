@@ -1,9 +1,12 @@
 
 🌐 AWS S3 Static Website Hosting – Personal Portfolio
+
 🧭 Overview
+
 In this project, I hosted my static personal portfolio website using Amazon S3. It walks through the complete process—from creating an S3 bucket to configuring public access and enabling static website hosting. This is a beginner-friendly example of deploying a serverless website on AWS.
 
 ☁️ What is Amazon S3?
+
 Amazon S3 (Simple Storage Service) is a highly scalable and durable object storage service provided by AWS. It allows users to store and retrieve any amount of data from anywhere on the web, making it ideal for hosting static websites.
 
 🔹 Key Features of S3
