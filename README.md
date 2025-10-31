@@ -196,7 +196,7 @@ Best Practice:Maintain the same folder structure as your website project.
 
 🎥 Demo Video
 
-Watch the full walkthrough here: https://www.youtube.com/watch?v=VIDEO_ID (Replace with actual video ID)
+Watch the full walkthrough here: https://github.com/DEEPIKAKANNAN25/AWS_Project/blob/main/Project-Demo/VideoRecording.mp4
 
 🌟 Benefits of Hosting on Amazon S3
 
