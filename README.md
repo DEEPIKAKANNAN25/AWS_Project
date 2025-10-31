@@ -1,41 +1,38 @@
-
 🌐 AWS S3 Static Website Hosting – Personal Portfolio
 
-🧭 Overview
+Overview
 
-In this project, I hosted my static personal portfolio website using Amazon S3. It walks through the complete process—from creating an S3 bucket to configuring public access and enabling static website hosting. This is a beginner-friendly example of deploying a serverless website on AWS.
+This project demonstrates how I hosted a static website (my personal portfolio) on Amazon S3, a scalable and cost-effective cloud storage service. It covers creating an S3 bucket, configuring it for public access, uploading website files, and enabling static website hosting. The result is a live, serverless website accessible via a public URL.
 
-☁️ What is Amazon S3?
+What is Amazon S3?
 
-Amazon S3 (Simple Storage Service) is a highly scalable and durable object storage service provided by AWS. It allows users to store and retrieve any amount of data from anywhere on the web, making it ideal for hosting static websites.
+Amazon Simple Storage Service (S3) is a highly durable, scalable, and secure object storage service from AWS. It allows me to store and retrieve data from anywhere on the web. Key features include:
 
-🔹 Key Features of S3
+Highly Scalable: Handles large amounts of data with automatic scaling.
+Durable: 99.999999999% (11 9's) durability for stored objects.
+Secure: Supports encryption, access controls, and compliance standards.
+Cost-Effective: Pay only for what I use, with low storage and transfer costs.
+Seamless Integration: Works with AWS services like CloudFront, Lambda, and QuickSight.
+Key Features of S3 for Static Website Hosting
+Serverless: No need for servers or infrastructure management.
+Global Reach: Content delivered via AWS edge locations for low latency.
+Highly Available: 99.99% uptime SLA with global reach via AWS edge locations.
+Customizable: Supports custom domains, HTTPS (via CloudFront), and more.
+Easy to Use: Simple setup through the AWS Management Console.
 
- • Unlimited data storage
+Project Objective
 
- • 99.999999999% durability
+The goal was to build and deploy my personal portfolio website using AWS S3. This included:
 
-• Fine-grained access control
+Creating and configuring an S3 bucket for public access.
+Uploading static files (HTML, CSS, JS, images).
+Enabling static website hosting.
+Testing the live site.
 
- • Pay-as-you-go pricing model
+AWS Services Used
 
-Seamless integration with AWS services like CloudFront, Lambda, and QuickSight
-
-🎯 Project Objective
-
- • The goal was to deploy a static portfolio website using Amazon S3 with the following outcomes:
-
- • Enable public access for global visibility
-
- • Achieve scalable and reliable hosting without managing servers
-
- • Provide a clear, step-by-step AWS implementation suitable for beginners
-
-🛠️ AWS Services Used
-
-Amazon S3
-
-IAM (for bucket policy)
+Amazon S3: For storage and hosting.
+AWS Management Console: For setup and configuration.
 
 🧩 Step-by-Step Implementation
 
