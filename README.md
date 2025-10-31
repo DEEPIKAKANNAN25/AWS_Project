@@ -4,7 +4,7 @@
 
 This project demonstrates how I hosted a static website (my personal portfolio) on Amazon S3, a scalable and cost-effective cloud storage service. It covers creating an S3 bucket, configuring it for public access, uploading website files, and enabling static website hosting. The result is a live, serverless website accessible via a public URL.
 
-🗄️What is Amazon S3?
+🗄️ What is Amazon S3?
 
 Amazon Simple Storage Service (S3) is a highly durable, scalable, and secure object storage service from AWS. It allows me to store and retrieve data from anywhere on the web. Key features include:
 
@@ -64,14 +64,14 @@ Part 4: File Upload and Management
 
 Part 5: Website Preview and Verification
 
-This division makes it easier to follow the process sequentially and understand the purpose of each configuration made in AWS S3.
+This division makes it easier to follow the process sequentially and understand each AWS S3 configuration..
 
 
 🪣 Part 1 – S3 Bucket Creation (Screenshots 1–7)
 
 🖼️ 1. Bucket Name Setup ([images/1-bucket-name.png](images/1-bucket-name.png))
 
-            I logged in to the AWS Management Console, navigated to S3, and clicked "Create bucket." I entered a unique bucket name (my-portfolio-bucket-demo) and selected a region 
+            I logged in to the AWS Management Console, navigated to S3, and clicked "Create bucket". I entered a unique bucket name (my-portfolio-bucket-demo) and selected a region 
 
              Key Setting:Choose the AWS Region close to your target audience to minimize latency.
 
@@ -120,7 +120,7 @@ This division makes it easier to follow the process sequentially and understand 
 
 🖼️ 10. Enable Static Website Hosting ([images/10-static-website-hosting.png](images/10-static-website-hosting.png))
 
-           I navigated to the "Properties" tab.I enabled static website hosting, set the index document (e.g., "index.html"), and noted the endpoint URL( ) S3 static websites use HTTP by default. For production, consider integrating CloudFront for HTTPS and custom domains.
+           I navigated to the "Properties" tab.I enabled static website hosting, set the index document (e.g., "index.html"), and noted the endpoint "URL ()" S3 static websites use HTTP by default. For production, consider integrating CloudFront for HTTPS and custom domains.
 
 🖼️ 11. Hosting Success Message ([images/11-hosting-success-message.png](images/11-hosting-success-message.png))
 
@@ -146,7 +146,7 @@ This division makes it easier to follow the process sequentially and understand 
               
 🖼️ 16. List of Uploaded Files ([images/16-uploaded-files-list.png](images/16-uploaded-files-list.png))
 
-             This page showed the list of files i selected . I confirmed the upload.
+             This page showed the list of files I selected. I confirmed the upload.
          
 
 🖼️ 17. Files Uploading in Progress ([images/17-files-uploading.png](images/17-files-uploading.png))
@@ -155,7 +155,7 @@ This division makes it easier to follow the process sequentially and understand 
 
 🖼️ 18. Upload Success Confirmation ([images/18-upload-success-message.png](images/18-upload-success-message.png))
 
-             This Confirmed all website files were uploaded successfully.I Visited my static website endpoint to view my hosted site.
+             This confirmed all website files were uploaded successfully.I visited my static website endpoint to view my hosted static site.
 
 🧭 Part 5 – Website Preview Pages (Screenshots 19–21)
 
@@ -165,11 +165,11 @@ This division makes it easier to follow the process sequentially and understand 
 
 🖼️ 20. Projects Page ([images/20-static-website-projects.png](images/20-static-website-projects.png))
 
-               Screenshot of “Projects” section of the website while scrolling through the hosted static site.
+               Screenshot of “Projects” section of the website while scrolling through the hosted static website.
 
 🖼️ 21. Certificates Page ([images/21-static-website-certificates.png](images/21-static-website-certificates.png))
 
-               Screenshot of “Technical skills, Soft skills and Certificates” section of the website while scrolling through the hosted static site.
+               Screenshot of “Technical skills, Soft skills and Certificates” section of the website while scrolling through the hosted static website.
 
 🎥 Demo Video: A full walkthrough of the deployed website in action: https://github.com/DEEPIKAKANNAN25/AWS_Project/blob/main/Project-Demo/VideoRecording.mp4
 
