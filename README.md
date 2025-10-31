@@ -4,7 +4,7 @@
 
 This project demonstrates how I hosted a static website (my personal portfolio) on Amazon S3, a scalable and cost-effective cloud storage service. It covers creating an S3 bucket, configuring it for public access, uploading website files, and enabling static website hosting. The result is a live, serverless website accessible via a public URL.
 
-What is Amazon S3?
+🗄️What is Amazon S3?
 
 Amazon Simple Storage Service (S3) is a highly durable, scalable, and secure object storage service from AWS. It allows me to store and retrieve data from anywhere on the web. Key features include:
 
@@ -71,55 +71,40 @@ This division makes it easier to follow the process sequentially and understand 
 
 🖼️ 1. Bucket Name Setup ([images/1-bucket-name.png](images/1-bucket-name.png))
 
-            Description:This step shows the creation of a new S3 bucket. You must enter a globally unique bucket name (e.g., my-portfolio-bucket-demo).
+            I logged in to the AWS Management Console, navigated to S3, and clicked "Create bucket." I entered a unique bucket name (my-portfolio-bucket-demo) and selected a region 
 
              Key Setting:Choose the AWS Region close to your target audience to minimize latency.
 
 🖼️ 2. Object Ownership Configuration ([images/2-object-ownership.png](images/2-object-ownership.png))
 
-             Description:Configure who owns and manages uploaded objects in the bucket.
-
-             Best Practice:Select Bucket owner enforced to ensure the bucket owner controls all objects (helps with access consistency).
+             I selected "Bucket owner enforced" to ensure the bucket owner controls all objects. This helps with access consistency.
 
 🖼️ 3. Block Public Access Settings ([images/3-block-public-access.png](images/3-block-public-access.png))
 
-             Description:AWS blocks public access by default for security.
-
-             Action:Uncheck Block all public access if your goal is to host a public website.
-
-             Warning:Only disable this if you understand the implications — this bucket will be readable by the public.
-
+             I unchecked "Block all public access" since my goal was to host a public website.
+             Warning: Only disable this for public websites, as it allows global read access—ensure your bucket policy is restrictive to avoid security risks.
 🖼️ 4. Versioning Configuration ([images/4-versioning-settings.png](images/4-versioning-settings.png))
 
-             Description:Versioning helps you keep multiple versions of an object (useful for rollback).
-
-             Optional:Enable versioning for production environments; it’s not mandatory for static websites.
+            I enabled versioning for backup and recovery (optional but recommended).
 
 🖼️ 5. Encryption Type Selection ([images/5-encryption-type.png](images/5-encryption-type.png))
 
-              Description:You can choose to encrypt your data at rest using Amazon S3-managed keys (SSE-S3) or AWS KMS keys (SSE-KMS).
-
-               Best Practice:Use SSE-S3 for simplicity unless compliance requires KMS.
+              I enabled server-side encryption (SSE-S3) for security.
 
 🖼️ 6. Create Bucket Confirmation ([images/6-create-bucket.png](images/6-create-bucket.png))
 
-             Description:This screenshot confirms clicking the Create bucket button at the bottom of the page.
+             I reviewed the settings and created the bucket.
 
-             Outcome:A new bucket is successfully created with the specified configuration.
 
 🖼️ 7. Bucket Created Successfully ([images/7-object-created-success-message.png](images/7-object-created-success-message.png))
 
-             Description:AWS confirms that your bucket has been created.
-
-             Next Step:Click the bucket name to open it and configure it for website hosting.
+             After creation, I clicked the bucket name to open its dashboard.
 
 🔐 Part 2 – Bucket Policy Configuration (Screenshots 8–9)
 
 🖼️ 8. Add Policy JSON Document ([images/8-policy-json-document.png](images/8-policy-json-document.png))
 
-          Description:In the Permissions tab, add a Bucket Policy that grants public read access to objects.
-
-          Purpose:This allows anyone on the internet to access the files hosted in your S3 bucket.
+           I went to the "Permissions" tab in the bucket dashboard. I added a policy to grant public read access to objects. This allows the website to be viewed publicly.
 
           
 
@@ -129,81 +114,62 @@ This division makes it easier to follow the process sequentially and understand 
 
 🖼️ 9. Policy Applied Successfully ([images/9-policy-success-message.png](images/9-policy-success-message.png))
 
-         Description:This screenshot confirms that the JSON policy was accepted and applied.
-
-         Verification:The bucket should now allow public access to its objects (useful for hosting a static website).
+         The policy is applied to the object successfully.
 
 🌐 Part 3 – Static Website Hosting Setup (Screenshots 10–13)
 
 🖼️ 10. Enable Static Website Hosting ([images/10-static-website-hosting.png](images/10-static-website-hosting.png))
 
-           Description:Go to the Properties tab and scroll to Static website hosting.
-
-           Action:Enable hosting and specify your index document (e.g., index.html) and error document (e.g., error.html).
+           I navigated to the "Properties" tab.I enabled static website hosting, set the index document (e.g., "index.html"), and noted the endpoint URL( ) S3 static websites use HTTP by default. For production, consider integrating CloudFront for HTTPS and custom domains.
 
 🖼️ 11. Hosting Success Message ([images/11-hosting-success-message.png](images/11-hosting-success-message.png))
 
-            Description:Confirms that static hosting has been enabled successfully.
-
-            Outcome:AWS provides an endpoint URL for your hosted site, usually like:
-
-             http://my-portfolio-bucket-demo.s3-website-us-east-1.amazonaws.com
+            The successful message is displayed at the top.
 
 🖼️ 12. Website URL Displayed ([images/12-website-url.png](images/12-website-url.png))
 
-              Description:This shows the generated website endpoint.
-
-              Action:Copy this URL to test your hosted site in a browser.
+              This shows the generated website endpoint.Copy this URL to test your hosted site in a browser.
 
 🖼️ 13. Custom Error Page ([images/13-error-page.png](images/13-error-page.png))
 
-              Description:Displays your custom error page when a non-existent page is requested.
-
-              Purpose:Provides a professional user experience even for invalid URLs.
+              Displays your custom error page when a non-existent page is requested.Provides a professional user experience even for invalid URLs.
 
 ☁️ Part 4 – File Upload and Management (Screenshots 14–18)
 
 🖼️ 14. Upload Page Interface ([images/14-upload-page.png](images/14-upload-page.png))
 
-               Description:Click Upload to start adding your website files (HTML, CSS, JS, images) into the bucket.
+               I went to the "Objects" tab" for uploading.
 
 🖼️ 15. File Upload Interface ([images/15-file-upload-page.png](images/15-file-upload-page.png))
 
-             Description:Shows the file selection dialog where you choose your local files to upload.
-
-             Best Practice:Maintain the same folder structure as your website project.
-
+              I uploaded my static files (HTML, CSS, JS, images) by clicking "Upload". I selected the files.
+              
 🖼️ 16. List of Uploaded Files ([images/16-uploaded-files-list.png](images/16-uploaded-files-list.png))
 
-            Description:Displays all files uploaded to your S3 bucket.
-
-            Verification:Ensure index.html and error.html exist at the root level.
+             This page showed the list of files i selected . I confirmed the upload.
+         
 
 🖼️ 17. Files Uploading in Progress ([images/17-files-uploading.png](images/17-files-uploading.png))
 
-             Description:Indicates that the upload process is ongoing.
-
-             Tip:Large files might take longer depending on your internet speed.
+             This showed the process of files uploading.
 
 🖼️ 18. Upload Success Confirmation ([images/18-upload-success-message.png](images/18-upload-success-message.png))
 
-             Description:Confirms all website files were uploaded successfully.
-
-             Next Step:Visit your static website endpoint to view your hosted site.
+             This Confirmed all website files were uploaded successfully.I Visited my static website endpoint to view my hosted site.
 
 🧭 Part 5 – Website Preview Pages (Screenshots 19–21)
 
 🖼️ 19. About Page ([images/19-static-webiste-about.png](images/19-static-webiste-about.png))
 
-             Description:Displays the “About, Education and Experience” section of the hosted static website captured during page scrolling.
+             Screenshot of  “About, Education and Experience” section of the hosted static website captured during page scrolling.
 
 🖼️ 20. Projects Page ([images/20-static-website-projects.png](images/20-static-website-projects.png))
 
-               Description:Shows the “Projects” section of the website while scrolling through the hosted static site.
+               Screenshot of “Projects” section of the website while scrolling through the hosted static site.
 
 🖼️ 21. Certificates Page ([images/21-static-website-certificates.png](images/21-static-website-certificates.png))
 
-               Description:Shows the “Technical skills, Soft skills and Certificates” section of the website while scrolling through the hosted static site.
+               Screenshot of “Technical skills, Soft skills and Certificates” section of the website while scrolling through the hosted static site.
 
 🎥 Demo Video: A full walkthrough of the deployed website in action: https://github.com/DEEPIKAKANNAN25/AWS_Project/blob/main/Project-Demo/VideoRecording.mp4
 
