@@ -70,7 +70,7 @@ This division makes it easier to follow the process sequentially and understand 
 
              Best Practice:Select Bucket owner enforced to ensure the bucket owner controls all objects (helps with access consistency).
 
-🖼️ 3. Block Public Access Settings (https://github.com/DEEPIKAKANNAN25/AWS_Project/blob/main/images/3-block-public-access.png)
+🖼️ 3. Block Public Access Settings ([images/3-block-public-access.png](images/3-block-public-access.png))
 
              Description:AWS blocks public access by default for security.
 
@@ -78,25 +78,25 @@ This division makes it easier to follow the process sequentially and understand 
 
              Warning:Only disable this if you understand the implications — this bucket will be readable by the public.
 
-🖼️ 4. Versioning Configuration (https://github.com/DEEPIKAKANNAN25/AWS_Project/blob/main/images/4-versioning-settings.png)
+🖼️ 4. Versioning Configuration ([images/4-versioning-settings.png](images/4-versioning-settings.png))
 
              Description:Versioning helps you keep multiple versions of an object (useful for rollback).
 
              Optional:Enable versioning for production environments; it’s not mandatory for static websites.
 
-🖼️ 5. Encryption Type Selection (https://github.com/DEEPIKAKANNAN25/AWS_Project/blob/main/images/5-encryption-type.png)
+🖼️ 5. Encryption Type Selection ([images/5-encryption-type.png](images/5-encryption-type.png))
 
               Description:You can choose to encrypt your data at rest using Amazon S3-managed keys (SSE-S3) or AWS KMS keys (SSE-KMS).
 
                Best Practice:Use SSE-S3 for simplicity unless compliance requires KMS.
 
-🖼️ 6. Create Bucket Confirmation (https://github.com/DEEPIKAKANNAN25/AWS_Project/blob/main/images/6-create-bucket.png)
+🖼️ 6. Create Bucket Confirmation ([images/6-create-bucket.png](images/6-create-bucket.png))
 
              Description:This screenshot confirms clicking the Create bucket button at the bottom of the page.
 
              Outcome:A new bucket is successfully created with the specified configuration.
 
-🖼️ 7. Bucket Created Successfully (https://github.com/DEEPIKAKANNAN25/AWS_Project/blob/main/images/7-object-created-success-message.png)
+🖼️ 7. Bucket Created Successfully ([images/7-object-created-success-message.png](images/7-object-created-success-message.png))
 
              Description:AWS confirms that your bucket has been created.
 
@@ -104,7 +104,7 @@ This division makes it easier to follow the process sequentially and understand 
 
 🔐 Part 2 – Bucket Policy Configuration (Screenshots 8–9)
 
-🖼️ 8. Add Policy JSON Document (https://github.com/DEEPIKAKANNAN25/AWS_Project/blob/main/images/8-policy-json-document.png)
+🖼️ 8. Add Policy JSON Document ([images/8-policy-json-document.png](images/8-policy-json-document.png))
 
           Description:In the Permissions tab, add a Bucket Policy that grants public read access to objects.
 
@@ -116,7 +116,7 @@ This division makes it easier to follow the process sequentially and understand 
 
 
 
-🖼️ 9. Policy Applied Successfully (https://github.com/DEEPIKAKANNAN25/AWS_Project/blob/main/images/9-policy-success-message.png)
+🖼️ 9. Policy Applied Successfully ([images/9-policy-success-message.png](images/9-policy-success-message.png))
 
          Description:This screenshot confirms that the JSON policy was accepted and applied.
 
@@ -124,13 +124,13 @@ This division makes it easier to follow the process sequentially and understand 
 
 🌐 Part 3 – Static Website Hosting Setup (Screenshots 10–13)
 
-🖼️ 10. Enable Static Website Hosting (https://github.com/DEEPIKAKANNAN25/AWS_Project/blob/main/images/10-static-website-hosting.png)
+🖼️ 10. Enable Static Website Hosting ([images/10-static-website-hosting.png](images/10-static-website-hosting.png))
 
            Description:Go to the Properties tab and scroll to Static website hosting.
 
            Action:Enable hosting and specify your index document (e.g., index.html) and error document (e.g., error.html).
 
-🖼️ 11. Hosting Success Message (https://github.com/DEEPIKAKANNAN25/AWS_Project/blob/main/images/11-hosting-success-message.png)
+🖼️ 11. Hosting Success Message ([images/11-hosting-success-message.png](images/11-hosting-success-message.png))
 
             Description:Confirms that static hosting has been enabled successfully.
 
