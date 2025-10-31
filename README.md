@@ -107,3 +107,85 @@ Paste it into your browser — your website is now live 🎉
 Example:
 
 http://personal-portfolio-website-hosting.s3-website.ap-south-1.amazonaws.com
+📸 Implementation Screenshots
+
+Below are all 22 screenshots showing the full implementation process:
+
+Screenshot	Description
+
+	Opening the Amazon S3 console and clicking “Create bucket”.
+
+	Entering bucket name and region details.
+
+	Configuring permissions and access settings.
+
+	Finalizing and creating the S3 bucket.
+
+	Successfully created S3 bucket displayed in the console.
+
+	Opening the bucket to view configuration tabs.
+
+	Uploading index.html, style.css, and script.js.
+
+	Upload process confirmation window.
+
+	Uploaded files listed under S3 bucket objects.
+
+	Successful upload confirmation message.
+
+	Accessing the Properties tab.
+
+	Locating the Static website hosting section.
+
+	Enabling static website hosting.
+
+	Saving hosting settings and generating website endpoint.
+
+	Opening Permissions settings.
+
+	Editing bucket policy for public access.
+
+	Reviewing policy details.
+
+	Confirming the updated bucket policy.
+
+	Accessing block public access section.
+
+	Confirming public access configuration.
+
+	Viewing the generated website endpoint.
+
+	Final hosted portfolio website successfully accessible.
+
+📁 Tip: Place all screenshots in a folder named /images inside your GitHub repository.
+
+🎥 Demo Video
+
+🎬 Watch the complete project walkthrough here:
+
+
+Replace VIDEO_ID with your actual YouTube video ID.
+
+🌟 Benefits of Hosting on Amazon S3
+
+Scalable: Automatically handles traffic fluctuations
+
+Secure: Fine-grained access control using IAM and policies
+
+Serverless: No need to manage infrastructure
+
+Cost-efficient: Pay only for the storage and data you use
+
+Highly Available: 99.99% uptime and global accessibility
+
+📚 Conclusion
+
+By completing this project, you have:
+
+Learned to deploy a static website on Amazon S3
+
+Understood key AWS configurations for public access
+
+Created a serverless, scalable, and secure portfolio website
+
+This project demonstrates the power of AWS S3 as a hosting solution — ideal for portfolios, resumes, documentation, and lightweight web apps.
