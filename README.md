@@ -36,7 +36,8 @@ Step-by-step AWS implementation for beginners
 
 🛠️ Services Used
 
-![Uploading image.png…]()
+<img width="869" height="204" alt="image" src="https://github.com/user-attachments/assets/0de441c3-def3-40cf-b65a-893a7e841c10" />
+
 
 🧩 Step-by-Step Implementation
 
