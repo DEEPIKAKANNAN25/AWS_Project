@@ -1,4 +1,4 @@
-🌐 AWS S3 Static Website Hosting – Personal Portfolio
+🌐** AWS S3 Static Website Hosting – Personal Portfolio**
 
 🧭 Overview
 
