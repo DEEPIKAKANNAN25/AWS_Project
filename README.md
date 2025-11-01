@@ -70,6 +70,7 @@ This division makes it easier to follow the process sequentially and understand 
 🪣 Part 1 – S3 Bucket Creation (Screenshots 1–7)
 
 🖼️ 1. Bucket Name Setup ([images/1-bucket-name.png](images/1-bucket-name.png))
+
      I logged in to the AWS Management Console, navigated to S3, and clicked "Create bucket". I entered a unique bucket name (my-portfolio-bucket-demo) and selected a region.
      
      Key Setting: Choose the AWS Region close to your target audience to minimize latency.
@@ -78,16 +79,17 @@ This division makes it easier to follow the process sequentially and understand 
      I selected "Bucket owner enforced" to ensure the bucket owner controls all objects. This helps with access consistency.
 
 🖼️ 3. Block Public Access Settings ([images/3-block-public-access.png](images/3-block-public-access.png))
-
-             I unchecked "Block all public access" since my goal was to host a public website.
-             Warning: Only disable this for public websites, as it allows global read access—ensure your bucket policy is restrictive to avoid security risks.
+ 
+       I unchecked "Block all public access" since my goal was to host a public website.
+     
+      Warning: Only disable this for public websites, as it allows global read access—ensure your bucket policy is restrictive to avoid security risks.
 🖼️ 4. Versioning Configuration ([images/4-versioning-settings.png](images/4-versioning-settings.png))
 
-            I enabled versioning for backup and recovery (optional but recommended).
+      I enabled versioning for backup and recovery (optional but recommended).
 
 🖼️ 5. Encryption Type Selection ([images/5-encryption-type.png](images/5-encryption-type.png))
-
-              I enabled server-side encryption (SSE-S3) for security.
+ 
+     I enabled server-side encryption (SSE-S3) for security.
 
 🖼️ 6. Create Bucket Confirmation ([images/6-create-bucket.png](images/6-create-bucket.png))
 
