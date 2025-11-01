@@ -22,9 +22,9 @@ Seamless Integration: Works with AWS services like CloudFront, Lambda, and Quick
 
 Serverless: No need for servers or infrastructure management.
 
-Global Reach: Content delivered via AWS edge locations for low latency.
+Global Reach (with CloudFront integration): S3 can be combined with CloudFront CDN for faster global delivery.
 
-Highly Available: 99.99% uptime SLA with global reach via AWS edge locations.
+Highly Available: 99.99% uptime.
 
 Customizable: Supports custom domains, HTTPS (via CloudFront), and more.
 
@@ -42,7 +42,7 @@ Enabling static website hosting.
 
 Testing the live site.
 
-🛠️AWS Services Used
+🛠️ AWS Services Used
 
 Amazon S3: For storage and hosting.
 
@@ -64,7 +64,7 @@ Part 4: File Upload and Management
 
 Part 5: Website Preview and Verification
 
-This division makes it easier to follow the process sequentially and understand each AWS S3 configuration.
+This structure makes it easier to follow the process step-by-step and understand each AWS S3 configuration.
 
 
 🪣 Part 1 – S3 Bucket Creation (Screenshots 1–7)
@@ -83,7 +83,7 @@ I selected "Bucket owner enforced" to ensure the bucket owner controls all objec
 
 I unchecked "Block all public access" since my goal was to host a public website.
 
-Warning: Only disable this for public websites, as it allows global read access—ensure your bucket policy is restrictive to avoid security risks.
+⚠️ Warning: Only disable this for public websites, as it allows global read access. Ensure your bucket policy is restrictive to avoid security risks. For better security, limit public access to only the necessary objects.
 🖼️ 4. Versioning Configuration ([images/4-versioning-settings.png](images/4-versioning-settings.png))
 
 I enabled versioning for backup and recovery (optional but recommended).
@@ -106,11 +106,11 @@ After creation, I clicked the bucket name to open its dashboard.
 
 I went to the "Permissions" tab in the bucket dashboard. I added a policy to grant public read access to objects. This allows the website to be viewed publicly.
 
-<img width="891" height="347" alt="image" src="https://github.com/user-attachments/assets/4a90227e-b5d7-431d-acd0-e97ed40b8ed3" />
+<img width="891" height="347" alt="image" alt="Bucket policy JSON example"  src="https://github.com/user-attachments/assets/4a90227e-b5d7-431d-acd0-e97ed40b8ed3" />
 
 🖼️ 9. Policy Applied Successfully ([images/9-policy-success-message.png](images/9-policy-success-message.png))
 
-The policy was applied to the object successfully.
+The policy was applied to the bucket successfully.
 
 🌐 Part 3 – Static Website Hosting Setup (Screenshots 10–13)
 
@@ -120,7 +120,7 @@ I navigated to the "Properties" tab. I enabled static website hosting, set the i
 
 🖼️ 11. Hosting Success Message ([images/11-hosting-success-message.png](images/11-hosting-success-message.png))
 
-The successful message is displayed at the top.
+The successful message is displayed at top.
 
 🖼️ 12. Website URL Displayed ([images/12-website-url.png](images/12-website-url.png))
 
@@ -128,7 +128,7 @@ This shows the generated website endpoint. Copy this URL to test your hosted sit
 
 🖼️ 13. Custom Error Page ([images/13-error-page.png](images/13-error-page.png))
 
-Displays your custom error page when a non-existent page is requested. Provides a professional user experience even for invalid URLs.
+Displays a custom error page when a non-existent page is requested. 
 
 ☁️ Part 4 – File Upload and Management (Screenshots 14–18)
 
@@ -138,56 +138,56 @@ I went to the "Objects" tab for uploading.
 
 🖼️ 15. File Upload Interface ([images/15-file-upload-page.png](images/15-file-upload-page.png))
 
-I uploaded my static files (HTML, CSS, JS, images) by clicking "Upload". I selected the files.
+I uploaded my static files (HTML, CSS, JS, images) by clicking "Upload". I selected all required website files.
               
 🖼️ 16. List of Uploaded Files ([images/16-uploaded-files-list.png](images/16-uploaded-files-list.png))
 
-This page showed the list of files I selected. I confirmed the upload.
+This screen showed the list of selected files before confirming upload.
 
 🖼️ 17. Files Uploading in Progress ([images/17-files-uploading.png](images/17-files-uploading.png))
 
-This showed the process of files uploading.
+This showed the process of files uploads.
 
 🖼️ 18. Upload Success Confirmation ([images/18-upload-success-message.png](images/18-upload-success-message.png))
 
-This confirmed all website files were uploaded successfully. I visited my hosted static website endpoint to view my hosted static website.
+This confirmed that all website files were uploaded successfully. I visited the static website endpoint to view the hosted site.
 
 🧭 Part 5 – Website Preview Pages (Screenshots 19–21)
 
 🖼️ 19. About Page ([images/19-static-website-about.png](images/19-static-website-about.png))
 
-Screenshot of  “About, Education and Experience” section of the hosted static website captured during page scrolling.
+Screenshot of the ‘About, Education, and Experience’ section of the hosted static website, captured while scrolling.
 
 🖼️ 20. Projects Page ([images/20-static-website-projects.png](images/20-static-website-projects.png))
 
-Screenshot of “Projects” section of the website while scrolling through the hosted static website.
+Screenshot of the ‘Projects’ section of the hosted static website, captured during scrolling.
 
 🖼️ 21. Certificates Page ([images/21-static-website-certificates.png](images/21-static-website-certificates.png))
 
-Screenshot of “Technical skills, Soft skills and Certificates” section of the website while scrolling through the hosted static website.
+Screenshot of the ‘Technical Skills, Soft Skills, and Certificates’ section of the hosted static website.
 
 🎥 Demo Video: A full walkthrough of the deployed website in action: https://github.com/DEEPIKAKANNAN25/AWS_Project/blob/main/Project-Demo/VideoRecording.mp4
 
 🌟 Benefits of Hosting on Amazon S3
 
- • Scalable: Handles high traffic automatically
+ • Scalable: Handles high traffic automatically.
 
- • Secure: IAM and bucket policies for access control
+ • Secure: IAM and bucket policies for access control.
 
- • Serverless: No infrastructure management needed
+ • Serverless: No infrastructure management needed.
 
- • Cost-effective: Pay only for what you use
+ • Cost-effective: Pay only for what you use.
 
- • Highly Available: 99.99% uptime with global reach
+ • Highly Available: 99.99% uptime.
 
 📚 Conclusion
 
- • By completing this project, I gained:" 
+• By completing this project, I gained the following skills and experience: 
 
- • Gained hands-on experience deploying a static website on AWS S3
+• Gained hands-on experience deploying a static website on AWS S3.
+ 
+• Learned how to configure public access and bucket policies.
 
- • Learned how to configure public access and bucket policies
+• Built a secure, scalable, and serverless portfolio site.
 
- • Built a secure, scalable, and serverless portfolio site
-
- • This project is a great example of using AWS S3 for lightweight web hosting — perfect for portfolios, resumes, documentation, and more.
+• Demonstrated AWS S3's value for lightweight web hosting, ideal for portfolios, resumes, documentation, and more.
