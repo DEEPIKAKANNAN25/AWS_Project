@@ -71,7 +71,7 @@ This structure makes it easier to follow the process step-by-step and understand
 
 🖼️ 1. Bucket Name Setup ([images/1-bucket-name.png](images/1-bucket-name.png))
 
-I logged in to the AWS Management Console, navigated to S3, and clicked "Create bucket". I entered a unique bucket name (my-portfolio-bucket-demo) and selected a region.
+I logged in to the AWS Management Console, navigated to S3, and clicked "Create bucket". I entered a unique bucket name (personal-portfolio-website-hosting) and selected a region.
 
 Key Setting: Choose the AWS Region close to your target audience to minimize latency.
 
