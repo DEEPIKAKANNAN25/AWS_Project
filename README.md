@@ -1,10 +1,10 @@
-🌐** AWS S3 Static Website Hosting – Personal Portfolio**
+**🌐 AWS S3 Static Website Hosting – Personal Portfolio**
 
-🧭 Overview
+**🧭 Overview**
 
 This project demonstrates how I hosted a static website (my personal portfolio) on Amazon S3, a scalable and cost-effective cloud storage service. It covers creating an S3 bucket, configuring it for public access, uploading website files, and enabling static website hosting. The result is a live, serverless website accessible via a public URL.
 
-🗄️ What is Amazon S3?
+**🗄️ What is Amazon S3?**
 
 Amazon Simple Storage Service (S3) is a highly durable, scalable, and secure object storage service from AWS. It allows me to store and retrieve data from anywhere on the web. Key features include:
 
@@ -18,7 +18,7 @@ Cost-Effective: Pay only for what I use, with low storage and transfer costs.
 
 Seamless Integration: Works with AWS services like CloudFront, Lambda, and QuickSight.
 
-🔹 Key Features of S3 for Static Website Hosting
+**🔹 Key Features of S3 for Static Website Hosting**
 
 Serverless: No need for servers or infrastructure management.
 
@@ -30,7 +30,7 @@ Customizable: Supports custom domains, HTTPS (via CloudFront), and more.
 
 Easy to Use: Simple setup through the AWS Management Console.
 
-🎯 Project Objective
+**🎯 Project Objective**
 
 The goal was to build and deploy my personal portfolio website using AWS S3. This included:
 
@@ -42,13 +42,13 @@ Enabling static website hosting.
 
 Testing the live site.
 
-🛠️ AWS Services Used
+**🛠️ AWS Services Used**
 
 Amazon S3: For storage and hosting.
 
 AWS Management Console: For setup and configuration.
 
-🧩 Step-by-Step Implementation
+**🧩 Step-by-Step Implementation**
 
 The entire implementation process has been divided into five structured parts to ensure clarity and a smooth workflow.
 Each part focuses on a key stage of the project — from creating the S3 bucket to verifying the final hosted website.
@@ -166,12 +166,12 @@ Screenshot of the ‘Projects’ section of the hosted static website, captured 
 
 Screenshot of the ‘Technical Skills, Soft Skills, and Certificates’ section of the hosted static website.
 
-🎥 Demo Video  
+**🎥 Demo Video**
 - [Watch on GitHub](https://github.com/DEEPIKAKANNAN25/AWS_Project/blob/main/Project-Demo/VideoRecording.mp4)  
 - [Watch on Google Drive](https://drive.google.com/file/d/1qhMxOXe_KAva_LvUzdyg6Ny6Woib5dQF/view?usp=sharing)
 
 
-🌟 Benefits of Hosting on Amazon S3
+**🌟 Benefits of Hosting on Amazon S3**
 
  • Scalable: Handles high traffic automatically.
 
@@ -183,7 +183,7 @@ Screenshot of the ‘Technical Skills, Soft Skills, and Certificates’ section 
 
  • Highly Available: 99.99% uptime.
 
-📚 Conclusion
+**📚 Conclusion**
 
 • By completing this project, I gained the following skills and experience: 
 
