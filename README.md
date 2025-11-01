@@ -67,7 +67,7 @@ Part 5: Website Preview and Verification
 This structure makes it easier to follow the process step-by-step and understand each AWS S3 configuration.
 
 
-🪣 Part 1 – S3 Bucket Creation (Screenshots 1–7)
+1️⃣ Part 1 – S3 Bucket Creation (Screenshots 1–7)
 
 🖼️ 1. Bucket Name Setup ([images/1-bucket-name.png](images/1-bucket-name.png))
 
@@ -100,7 +100,7 @@ I reviewed the settings and created the bucket.
 
 After creation, I clicked the bucket name to open its dashboard.
 
-🔐 Part 2 – Bucket Policy Configuration (Screenshots 8–9)
+2️⃣ Part 2 – Bucket Policy Configuration (Screenshots 8–9)
 
 🖼️ 8. Add Policy JSON Document ([images/8-policy-json-document.png](images/8-policy-json-document.png))
 
@@ -112,7 +112,7 @@ I went to the "Permissions" tab in the bucket dashboard. I added a policy to gra
 
 The policy was applied to the bucket successfully.
 
-🌐 Part 3 – Static Website Hosting Setup (Screenshots 10–13)
+3️⃣ Part 3 – Static Website Hosting Setup (Screenshots 10–13)
 
 🖼️ 10. Enable Static Website Hosting ([images/10-static-website-hosting.png](images/10-static-website-hosting.png))
 
@@ -130,7 +130,7 @@ This shows the generated website endpoint. Copy this URL to test your hosted sit
 
 Displays a custom error page when a non-existent page is requested. 
 
-☁️ Part 4 – File Upload and Management (Screenshots 14–18)
+4️⃣ Part 4 – File Upload and Management (Screenshots 14–18)
 
 🖼️ 14. Upload Page Interface ([images/14-upload-page.png](images/14-upload-page.png))
 
@@ -152,7 +152,7 @@ This showed the process of files uploads.
 
 This confirmed that all website files were uploaded successfully. I visited the static website endpoint to view the hosted site.
 
-🧭 Part 5 – Website Preview Pages (Screenshots 19–21)
+5️⃣ Part 5 – Website Preview Pages (Screenshots 19–21)
 
 🖼️ 19. About Page ([images/19-static-website-about.png](images/19-static-website-about.png))
 
