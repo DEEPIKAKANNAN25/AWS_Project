@@ -70,14 +70,12 @@ This division makes it easier to follow the process sequentially and understand 
 🪣 Part 1 – S3 Bucket Creation (Screenshots 1–7)
 
 🖼️ 1. Bucket Name Setup ([images/1-bucket-name.png](images/1-bucket-name.png))
-
-            I logged in to the AWS Management Console, navigated to S3, and clicked "Create bucket". I entered a unique bucket name (my-portfolio-bucket-demo) and selected a region.
-
-             Key Setting: Choose the AWS Region close to your target audience to minimize latency.
+     I logged in to the AWS Management Console, navigated to S3, and clicked "Create bucket". I entered a unique bucket name (my-portfolio-bucket-demo) and selected a region.
+     
+     Key Setting: Choose the AWS Region close to your target audience to minimize latency.
 
 🖼️ 2. Object Ownership Configuration ([images/2-object-ownership.png](images/2-object-ownership.png))
-
-             I selected "Bucket owner enforced" to ensure the bucket owner controls all objects. This helps with access consistency.
+     I selected "Bucket owner enforced" to ensure the bucket owner controls all objects. This helps with access consistency.
 
 🖼️ 3. Block Public Access Settings ([images/3-block-public-access.png](images/3-block-public-access.png))
 
