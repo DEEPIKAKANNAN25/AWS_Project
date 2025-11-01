@@ -106,7 +106,7 @@ After creation, I clicked the bucket name to open its dashboard.
 
 I went to the "Permissions" tab in the bucket dashboard. I added a policy to grant public read access to objects. This allows the website to be viewed publicly.
 
-<img width="891" height="347" alt="image" alt="Bucket policy JSON example"  src="https://github.com/user-attachments/assets/4a90227e-b5d7-431d-acd0-e97ed40b8ed3" />
+<img width="891" height="347"  alt="Bucket policy JSON example"  src="https://github.com/user-attachments/assets/4a90227e-b5d7-431d-acd0-e97ed40b8ed3" />
 
 🖼️ 9. Policy Applied Successfully ([images/9-policy-success-message.png](images/9-policy-success-message.png))
 
@@ -120,7 +120,7 @@ I navigated to the "Properties" tab. I enabled static website hosting, set the i
 
 🖼️ 11. Hosting Success Message ([images/11-hosting-success-message.png](images/11-hosting-success-message.png))
 
-The successful message is displayed at top.
+The success message is displayed at top.
 
 🖼️ 12. Website URL Displayed ([images/12-website-url.png](images/12-website-url.png))
 
@@ -146,7 +146,7 @@ This screen showed the list of selected files before confirming upload.
 
 🖼️ 17. Files Uploading in Progress ([images/17-files-uploading.png](images/17-files-uploading.png))
 
-This showed the process of files uploads.
+This showed the process of file uploads.
 
 🖼️ 18. Upload Success Confirmation ([images/18-upload-success-message.png](images/18-upload-success-message.png))
 
@@ -166,7 +166,10 @@ Screenshot of the ‘Projects’ section of the hosted static website, captured 
 
 Screenshot of the ‘Technical Skills, Soft Skills, and Certificates’ section of the hosted static website.
 
-🎥 Demo Video: A full walkthrough of the deployed website in action: https://github.com/DEEPIKAKANNAN25/AWS_Project/blob/main/Project-Demo/VideoRecording.mp4
+🎥 Demo Video  
+- [Watch on GitHub](https://github.com/DEEPIKAKANNAN25/AWS_Project/blob/main/Project-Demo/VideoRecording.mp4)  
+- [Watch on Google Drive](https://drive.google.com/file/d/1qhMxOXe_KAva_LvUzdyg6Ny6Woib5dQF/view?usp=sharing)
+
 
 🌟 Benefits of Hosting on Amazon S3
 
